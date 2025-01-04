@@ -1,6 +1,5 @@
 package src;
 
-import logicircuit.LCDPanel;
 import logicircuit.LCInputPin;
 
 public class Conexao {
@@ -40,7 +39,7 @@ public class Conexao {
         this.pin = pin;
     }
 
-    public boolean isState() {
+    public boolean getState() {
         return state;
     }
 
@@ -48,7 +47,7 @@ public class Conexao {
         this.state = state;
     }
 
-    public void drawConexao(LCDPanel drawPanel) {
-        drawPanel.drawWire(begin.getComponent(), begin.getX(), begin.getY(), end.getComponent(), end.getX(), end.getY(), pin, state);
+    public void drawConexao() {
+        Main.panel.drawWire(begin.getComponent(), begin.getX(), begin.getY(), end.getComponent(), end.getX(), end.getY(), pin, state);
     }
 }

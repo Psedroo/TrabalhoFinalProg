@@ -6,12 +6,14 @@ public class Componente {
     private String id;
     private LCComponent component;
     private int x, y;
+    private String legenda;
 
-    public Componente(LCComponent component, int x, int y) {
-        this.id = null;
+    public Componente(String id, LCComponent component, int x, int y, String legenda) {
+        this.id = id;
         this.component = component;
         this.x = x;
         this.y = y;
+        this.legenda = legenda;
     }
 
     public String getId() {
@@ -44,5 +46,13 @@ public class Componente {
 
     public void setY(int y) {
         this.y = y;
+    }
+
+    public String getLegenda() {
+        return legenda;
+    }
+
+    public void setLegenda(String legenda) {
+        this.legenda = legenda;
     }
 }

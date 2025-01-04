@@ -5,8 +5,8 @@ import logicircuit.LCComponent;
 public class Display extends Componente {
     private int value;
 
-    public Display(LCComponent component, int x, int y, int value){
-        super(component,x,y);
+    public Display(String id, LCComponent component, int x, int y, String legenda, int value){
+        super(id,component,x,y,legenda);
         this.value = value;
     }
 

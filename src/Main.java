@@ -8,9 +8,11 @@ public class Main {
     public static LCDPanel panel;
 
     public static void main(String[] args) {
-        Comando Com = new Comando();
+        Circuito circuito = new Circuito();
+//        System.out.println("Checkpoint Main1");
+        Comando Com = new Comando(circuito);
+//        System.out.println("Checkpoint Main2");
         LCDFrameCmd frame = new LCDFrameCmd(Com,"Demo de Logic Circuit", 900, 700);
         panel = frame.drawPanel();
-       /* panel.drawComponent(LCComponent.AND,100,100);*/
     }
 }
