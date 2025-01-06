@@ -16,6 +16,31 @@ public class Componente {
         this.legenda = legenda;
     }
 
+    public boolean getInputPinA() throws Exception {
+        throw new Exception("Nao tenho este input");
+    }
+
+    public void setInputPinA(boolean inputPinA) throws Exception {
+        throw new Exception("Nao tenho este input");
+    }
+
+    public boolean getInputPinB()  throws Exception {
+        throw new Exception("Nao tenho este input");
+    }
+
+
+    public void setInputPinB(boolean inputPinB) throws Exception {
+        throw new Exception("Nao tenho este input");
+    }
+
+    public boolean getInputPinC()  throws Exception {
+        throw new Exception("Nao tenho este input");
+    }
+
+    public void setInputPinC(boolean inputPinC) throws Exception {
+        throw new Exception("Nao tenho este input");
+    }
+
     public String getId() {
         return id;
     }

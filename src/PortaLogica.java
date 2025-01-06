@@ -6,12 +6,12 @@ public class PortaLogica extends Componente {
         private boolean outputPin;
 
     //Construtor sem legenda
-    public PortaLogica(String id, LCComponent component, int x, int y, String legenda, boolean outputPin){
+    public PortaLogica(String id, LCComponent component, int x, int y, String legenda){
         super(id,component,x,y,legenda);
-        this.outputPin = outputPin;
+        this.outputPin = false;
     }
 
-    public boolean isOutputPin() {
+    public boolean getOutputPin() {
         return outputPin;
     }
 
